@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: ONTAP Cloud 9.3 incluye varias funciones y mejoras nuevas. 
+---
+= Novedades de ONTAP Cloud 9.3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP Cloud 9.3 incluye varias funciones y mejoras nuevas.
+
+
+
+== Mejoras de la alta disponibilidad del cloud de ONTAP en AWS
+
+La versión 9.3 aborda la resiliencia de los pares de alta disponibilidad de cloud de ONTAP para tolerar problemas de red o latencias más transitorias dentro del ecosistema de AWS y garantizar la disponibilidad de los datos de los clientes durante tales eventos.
+
+
+
+== Apoyo a la región de la UE (París) en AWS
+
+ONTAP Cloud ahora es compatible con la región de la UE (París) en AWS. En función de los tipos de instancia admitidos en esta región, se encuentran disponibles las siguientes configuraciones de cloud de ONTAP en la región de UE (París):
+
+* Estándar de cloud ONTAP (r4.xlarge)
+* Cloud Premium de ONTAP (r4.2xgrande)
+* ONTAP BYOL (r4.xlarge y r4.2xlarge)
+
+
+
+
+== Rendimiento de escritura mejorado con discos Premium de Azure
+
+El rendimiento de escritura de ONTAP Cloud se ha mejorado en Azure al usar discos de almacenamiento premium. Esta mejora es compatible con Cloud Standard, Premium y BYOL de ONTAP.
+
+
+NOTE: No se admiten mejoras en el rendimiento de escritura al utilizar el tipo de máquina virtual DS3_v2.
+
+
+
+== Aumento del límite de capacidad para Cloud Premium de ONTAP y BYOL en Azure
+
+El límite de capacidad para ONTAP Cloud Premium y ONTAP Cloud BYOL se ha duplicado a 252 TB cuando se utilizan los tipos de máquinas virtuales DS5_v2 o DS14_v2.
+
+
+NOTE: Este cambio es posible debido a un aumento en el número de discos disponibles por máquina virtual de Azure. No cambia la capacidad máxima por agregado.
+
+
+
+== Soporte para las regiones de Azure US Gov
+
+Ahora puede poner en marcha Cloud Manager y ONTAP Cloud BYOL en las siguientes regiones de Azure:
+
+* Gobernador DE ESTADOS Unidos, Arizona
+* Gobierno de Estados Unidos, Texas
+* Virginia, el gobernador DE EE. UU
+
+
+Para poner en marcha Cloud Manager en estas regiones, debe crear un equipo virtual CentOS 7.3 desde Azure Marketplace, descargar el instalador de Cloud Manager desde el sitio de soporte de NetApp y, a continuación, instalar el software. Una vez que se ejecute Cloud Manager, puede poner en marcha sistemas con licencia para cloud de ONTAP en estas regiones, como en cualquier otra región.
+
+
+
+== Compatibilidad con la recuperación ante desastres de SVM
+
+ONTAP Cloud admite una SVM que sirve datos y una SVM de destino que se usa para la recuperación ante desastres. Puede activar la SVM de destino para el acceso a los datos si se produce una interrupción en la SVM de origen.
+
+La recuperación ante desastres de SVM es el mirroring asíncrono de los datos de SVM y la configuración de una SVM de origen a una SVM de destino. Puede activar rápidamente una SVM de destino para el acceso a los datos si la SVM de origen ya no está disponible.
+
+
+NOTE: Cloud Manager no ofrece ninguna compatibilidad de configuración ni orquestación para la recuperación ante desastres de SVM. Tampoco admite tareas relacionadas con el almacenamiento en ninguna SVM adicional. Debe usar System Manager o la CLI para la recuperación ante desastres de SVM.
+
+https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Guía exprés de preparación para la recuperación de desastres de SVM"^]
+
+https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["Guía exprés de recuperación ante desastres de SVM"^]
+
+
+
+== Notas de actualización
+
+* Las actualizaciones se deben completar desde Cloud Manager. No debe actualizar ONTAP Cloud con System Manager o la CLI. Hacerlo puede afectar a la estabilidad del sistema.
+* Puede actualizar a ONTAP Cloud 9.3 desde ONTAP Cloud 9.2.
+* La actualización de un único sistema de nodos desconecta el sistema hasta 25 minutos, durante los cuales se interrumpe la I/O.
+* Actualizar un par de alta disponibilidad no provoca interrupciones y la I/o se realiza de forma ininterrumpida. Durante este proceso de actualización no disruptiva, cada nodo se actualiza conjuntamente para seguir proporcionando I/o a los clientes.
+
