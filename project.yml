@@ -53,7 +53,7 @@ settings:
   - name: Cloud Volumes ONTAP
     url: "/cloud-volumes-ontap-94-relnotes"
     version-number: '9.4'
-  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
 sidebar:
   entries:
   - title: Página principal de las notas de la versión
