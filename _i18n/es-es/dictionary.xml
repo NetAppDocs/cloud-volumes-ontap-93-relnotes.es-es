@@ -224,13 +224,11 @@
   <block id="aa9528fad85cffe83be0372dc56e2966" category="list-text">Se admite el rendimiento de escritura mejorado cuando se utilizan discos de almacenamiento Premium de Azure con ONTAP Cloud Standard, Premium y BYOL, pero no cuando se utiliza el tipo de máquina virtual DS3_v2.</block>
   <block id="f1d030b53e2e410016e67d8d3b5484c4" category="list-text">Para obtener información sobre la compatibilidad con Azure region, consulte<block ref="ac98146aa56916be7717a50257418923" category="inline-link-rx"></block>.</block>
   <block id="8d3d4f13602cd5a25a775931599b70ea" category="summary">En estas notas de la versión, se describen las nuevas funciones, las limitaciones y los problemas conocidos de ONTAP Cloud 9.3.</block>
-  <block id="d5e6ac2df92a695122340bdc7757b16e" category="doc">Notas de la versión de ONTAP Cloud 9.3</block>
   <block id="34515f1d88b10d0db0a78eba6c533394" category="summary">Los problemas conocidos identifican problemas por los que el uso correcto de esta versión del producto puede resultar imposible.</block>
   <block id="95dc0391ce7b396d7dd5622284e8fc3e" category="doc">Problemas conocidos</block>
   <block id="06771acbf463cd61bfb4131e0b8b6f69" category="paragraph">No existen problemas conocidos en esta versión específicos de ONTAP Cloud.</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link">Notas de la versión de ONTAP</block>
   <block id="398d7dd4fa02e30dc6322ad98eff7d2b" category="paragraph">Es posible encontrar problemas conocidos del software ONTAP en el<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Página principal de las notas de la versión</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Manos a la obra</block>
   <block id="e19968c5ebc4b94a271992f4b0563be8" category="sidebar">Configuraciones y límites</block>
@@ -239,9 +237,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Blog de Cloud Central</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">Cloud de ONTAP</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -250,4 +245,5 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="f9a77fb7fd4e4f366ad7adb32159b4b0" category="sidebar">Notas de la versión de Cloud 9,3 de ONTAP</block>
 </blocks>
